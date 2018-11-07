@@ -1,0 +1,26 @@
+{% extends 'home/home.html' %}
+{% block content %}
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'user/profile/profile.css' %}">
+    </head>
+    <body>
+        <div id="info">
+            <p><img src="/media/{{ profile.image }}" height="70" width="70" id="profile"></p>
+            <p>Username:    {{ user.username }}</p>
+            <p>Email:       {{ user.email }}</p>
+            <p>ORCID:       {{ user.profile.orcid }}</p>
+            <p>First Name:  {{ user.first_name }}</p>
+            <p>Last Name:   {{ user.last_name }}</p>
+            <p>Interests:   {{ user.profile.interests }}</p>
+            <p>Affiliation: {{ user.profile.affiliation }}</p>
+            <p>Facebook:    {{ user.profile.facebook }}</p>
+            <p>Linked In:   {{ user.profile.linked_in }}</p>
+        </div>
+        <a href="{% url 'edit_profile' %}" class="text">Change information</a>
+        </body>
+</html>
+
+{% endblock %}

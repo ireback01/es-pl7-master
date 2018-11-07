@@ -1,0 +1,26 @@
+#header{
+    background-color: darkseagreen;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border-style: dashed; */
+}
+.icon{
+    height: 20px;
+    width:  20px;
+    /* border-style: dotted; */
+}
+
+.text {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: darkseagreen;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* main {
+    border-style: solid;
+} */
